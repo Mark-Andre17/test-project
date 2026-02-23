@@ -1,7 +1,10 @@
+import { TaskPage } from "@pages/TaskPage";
+
 function App() {
   return (
     <>
-      <h1>test project</h1>
+      <h1>TASKS</h1>
+      <TaskPage />
     </>
   );
 }

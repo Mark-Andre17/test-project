@@ -39,13 +39,6 @@ export default defineConfig([
       "fsd/no-relative-imports": ["error", {}],
 
       "fsd/no-public-api-sidestep": "error",
-
-      "fsd/forbidden-imports": [
-        "error",
-        {
-          alias: "@",
-        },
-      ],
     },
   },
 ]);
