@@ -1,3 +1,3 @@
-export { Button, FilterButtons } from "./ui";
+export { Button, FilterButtons, Flex, Checkbox } from "./ui";
 export { initialTasks, filterOptions } from "./constants";
 export type { ITask, IOption } from "./constants";

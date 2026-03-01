@@ -1,7 +1,8 @@
-import type { ITask } from "@shared/constants";
-
+interface ITask {
+  id: string;
+  title: string;
+  completed: boolean;
+}
 export interface ITaskCardProps {
   task: ITask;
-  removeTask: (id: string) => void;
-  toggleTask: (id: string) => void;
 }
