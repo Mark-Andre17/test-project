@@ -3,7 +3,7 @@ import { TaskPage } from "@pages/TaskPage";
 function App() {
   return (
     <>
-      <h1>TASKS</h1>
+      <h1>Мои задачи</h1>
       <TaskPage />
     </>
   );

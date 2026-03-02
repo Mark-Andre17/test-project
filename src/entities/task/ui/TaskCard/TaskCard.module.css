@@ -1,9 +1,7 @@
 .taskcard {
   display: flex;
   align-items: center;
-  padding: 10px;
-  justify-content: space-between;
-  border: 1px solid #007bff;
+  gap: 20px;
   border-radius: 8px;
 }
 .taskcard_checkbox {
