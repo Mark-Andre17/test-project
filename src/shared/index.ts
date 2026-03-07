@@ -1,3 +1,4 @@
-export { Button, FilterButtons, Flex, Checkbox } from "./ui";
-export { initialTasks, filterOptions } from "./constants";
+export { Button, FilterButtons, Flex, Checkbox, Skeleton } from "./ui";
+export { filterOptions } from "./constants";
 export type { ITask, IOption } from "./constants";
+export type { SkeletonVariant, SkeletonSize, ISkeletonProps } from "./ui";
