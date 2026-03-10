@@ -1,12 +1,14 @@
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 
 import type { IUseTaskAction } from "@features/taskList/model";
 import type { Filter, ITask } from "@shared/constants";
 
 export const useTask = (initialTasks: ITask[]): IUseTaskAction => {
-  const [tasks, setTasks] = useState<ITask[]>(initialTasks);
+  const [tasks, setTasks] = useState<ITask[]>([]);
   const [filter, setFilter] = useState<Filter>("all");
-
+  useEffect(() => {
+    setTasks(initialTasks);
+  }, [initialTasks]);
   const filteredTasks = useMemo(() => {
     return tasks.filter((task: ITask) => {
       if (filter === "completed") return task.completed;

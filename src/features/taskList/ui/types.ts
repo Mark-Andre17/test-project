@@ -1,6 +1,5 @@
-import type { IOption, ITask } from "@shared/constants";
+import type { IOption } from "@shared/constants";
 
 export interface ITaskListProps {
-  initialTasks: ITask[];
   filterOptions: IOption[];
 }

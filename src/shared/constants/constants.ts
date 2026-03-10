@@ -1,12 +1,8 @@
-import type { IOption, ITask } from "@shared/constants/types";
-
-export const initialTasks: ITask[] = [
-  { id: "1", title: "Купить молоко", completed: false },
-  { id: "2", title: "Сделать зарядку", completed: true },
-];
+import type { IOption } from "@shared/constants/types";
 
 export const filterOptions: IOption[] = [
   { label: "Все", value: "all" },
   { label: "Выполненные", value: "completed" },
   { label: "Невыполненные", value: "incomplete" },
 ];
+export const API_BASE_URL = "https://json-placeholder.mock.beeceptor.com";

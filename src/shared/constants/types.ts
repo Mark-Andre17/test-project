@@ -4,6 +4,7 @@ export interface IOption {
   value: Filter;
 }
 export interface ITask {
+  userId: string;
   id: string;
   title: string;
   completed: boolean;
